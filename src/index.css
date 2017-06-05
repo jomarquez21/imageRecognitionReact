@@ -2,6 +2,10 @@ html {
     height: 100%;
 }
 
+#root {
+    height: 100%;
+}
+
 body {
     height: 100%;
     background-color: #f7f7f7 !important;
@@ -1689,7 +1693,7 @@ footer .footer-box-info .list-one li .list-two li {
     box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.3);
 }
 
-.container-login .box-login .box-image {
+.container-login .box-login div .box-image {
     width: 50%;
     float: left;
     border-radius: 3px;
@@ -1697,7 +1701,7 @@ footer .footer-box-info .list-one li .list-two li {
     border-top-right-radius: 0;
 }
 
-.container-login .box-login .box-image .logo-ir {
+.container-login .box-login div .box-image .logo-ir {
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -2030,7 +2034,7 @@ footer .footer-box-info .list-one li .list-two li {
         background-image: url('./images/bg3.jpg');
     }
 
-    .container-login .box-login .box-image {
+    .container-login .box-login div .box-image {
         width: 100%;
         height: 120px;
     }
@@ -2043,7 +2047,7 @@ footer .footer-box-info .list-one li .list-two li {
         width: 87%;
     }
 
-    .container-login .box-login .box-image .logo-ir {
+    .container-login .box-login div .box-image .logo-ir {
         background-image: url("./images/logo-small.png");
         width: 244px;
         height: 84px;
@@ -2154,7 +2158,7 @@ footer .footer-box-info .list-one li .list-two li {
         width: 91%;
     }
 
-    .container-login .box-login .box-image .logo-ir {
+    .container-login .box-login div .box-image .logo-ir {
         width: 244px;
         height: 84px;
     }
@@ -2340,7 +2344,7 @@ footer .footer-box-info .list-one li .list-two li {
         background-image: url("./images/bg2.jpg");
     }
 
-    .container-login .box-login .box-image {
+    .container-login .box-login div .box-image {
         width: 50%;
         height: 100%;
     }
@@ -2353,7 +2357,7 @@ footer .footer-box-info .list-one li .list-two li {
         width: 90%;
     }
 
-    .container-login .box-login .box-image .logo-ir {
+    .container-login .box-login div .box-image .logo-ir {
         background-image: url("./images/logo.png");
         width: 200px;
         height: 320px;
