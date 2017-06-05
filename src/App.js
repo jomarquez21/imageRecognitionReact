@@ -1,20 +1,37 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import firebase from 'firebase';
 import './App.css';
+import LoginComponent from './components/login/login.component';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      user: null
+    }
+  }
+
+  componentWillMount() {
+    firebase.auth().onAuthStateChanged(user => this.setState({user}));
+  }
+
   render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+    if (this.user) {
+      return (
+        <div>
+
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="container-login">
+          <div className="box-login">
+            <LoginComponent />
+            <div className="clearfix"></div>
+          </div>
+        </div>
+      );
+    }
   }
 }
 
